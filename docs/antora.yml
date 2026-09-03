@@ -1,0 +1,12 @@
+name: casci-github
+version: true
+title: Casci GitHub Configuration
+ext:
+  collector:
+    scan:
+      - dir: '~+/.github'
+        files: PULL_REQUEST_TEMPLATE.md
+        into: modules/pr-templates/examples
+      - dir: '~+/.github/PULL_REQUEST_TEMPLATE'
+        files: '*.md'
+        into: modules/pr-templates/examples
